@@ -1,0 +1,236 @@
+/* GENERAL */
+#contenedor{
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 0.5%;
+    background-image: url('./../images/fondo.png');
+}
+
+body{
+    background-color: white !important;
+}
+
+#botonAtras{
+    position: fixed;
+    bottom: 5%;
+    right: 2%;
+    display: none;
+}
+
+/* Barra de navegación */
+.navbar{
+    background-color: #0088ff;
+}
+
+#buscarPoblacion{
+    float: right;
+    padding-top: 0.5%;
+}
+
+#subtitulo{
+    background-color: rgb(0, 195, 255);
+    color: white;
+    text-align: center;
+    padding-top: 0.5%;
+    padding-left: 1%;
+    padding-bottom: 0.5%;
+}
+
+#modoOscuro{
+  float: right;
+}
+
+/* Boton deslizable del modo oscuro */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 17px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 13px;
+  width: 13px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider:before {
+  background-color: black;
+}
+
+input:checked + .slider {
+  background-color: white;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 0.5px white;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(13px);
+  -ms-transform: translateX(13px);
+  transform: translateX(13px);
+}
+
+.slider.round {
+  border-radius: 17px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* PRINCIPAL */
+#today{
+    width: 40%;
+    float: left;
+    border: black;
+    border-style: solid;
+    background-color: white;
+    opacity: 0.8;
+    margin-left: 5%;
+    margin-top: 8%;
+}
+
+#tituloToday{
+    border-bottom: ridge;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    text-align: center;
+}
+
+#textoToday{
+    padding: 1% 3% 1% 3%;
+}
+
+#tomorrow{
+    width: 40%;
+    float: right;
+    border: black;
+    border-style: solid;
+    background-color: white;
+    opacity: 0.8;
+    margin-right: 5%;
+    margin-top: 8%;
+    padding-top: 1%;
+}
+
+#tituloTomorrow{
+    border-bottom: ridge;
+    padding-bottom: 1%;
+    text-align: center;
+}
+
+#textoTomorrow{
+    padding: 1% 3% 1% 3%;
+}
+
+#seleccionarProvincia{
+    margin-left: 10%;
+    margin-top: 3%;
+    border-style: ridge;
+    float: left;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#selectProvincia{
+    float: right;
+    margin-top: -3%;
+}
+
+#seleccionarPoblacion{
+    margin-left: 10%;
+    border-style: ridge;
+    float: left;
+    margin-top: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#selectPoblacion{
+    float: right;
+    margin-top: -3%;
+}
+
+#ordenBuscadores{
+    margin-left: 10%;
+    border-style: ridge;
+    float: left;
+    margin-top: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#selectOrden{
+    float: right;
+    margin-top: -3%;
+}
+
+/* Mostrar municipio */
+#municipio{
+  position: absolute;
+  top: 75%;
+  right: 18%;
+  width: 65%;
+  border-style: solid;
+  background-color: white;
+  opacity: 0.7;
+  display: none;
+}
+
+#tituloMunicipio{
+  text-align: center;
+  padding-bottom: 0.5%;
+}
+
+#fechaHoy{
+    font-weight: bold;
+}
+
+#fechaHoy, #mañana, #proximosDias{
+    border-style: double;
+    float: left;
+    text-align: center;
+    width: 100%;
+}
+
+
+#estado, #humedadMunicipio, #vientoMunicipio, #lluviaMunicipio, #temperaturas{
+  float: left;
+  margin-left: 7%;
+  padding: 0.5% 0.5% 0.5% 0.5%;
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+#descargarPDF{
+  position: absolute;
+  top: 115%;
+  right: 20%;
+  display: none;
+}
